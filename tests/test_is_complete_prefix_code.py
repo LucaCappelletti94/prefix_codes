@@ -17,11 +17,11 @@ def test_is_complete_prefix_code():
         [unary(i) for i in range(100)],
         [inverted_unary(i) for i in range(100)],
         [minimal_binary_coding(i, 100) for i in range(100)],
-        #[gamma_coding(i) for i in range(10000)],
-        #[delta_coding(i) for i in range(10000)],
-        #[omega_coding(i) for i in range(1, 10000)],
-        #[levenshtein_coding(i) for i in range(10000)],
-        #[golomb_coding(i, 3) for i in range(10000)]
+        #[gamma_coding(i) for i in range(10000)], => FLOAT ERROR
+        #[delta_coding(i) for i in range(10000)],  => FLOAT ERROR
+        #[omega_coding(i) for i in range(1, 10000)],  => FLOAT ERROR
+        #[levenshtein_coding(i) for i in range(10000)],  => FLOAT ERROR
+        #[golomb_coding(i, 3) for i in range(10000)]  => FLOAT ERROR
     ]
 
     negative = [
@@ -30,10 +30,6 @@ def test_is_complete_prefix_code():
         interpolative_coding(list(range(0,100)), 0, 100),
         [reduced_binary_coding(i) for i in range(100)]
     ]
-
-    print([
-        mcmillan_sum(p) for p in positive
-    ])
 
     assert all([
         is_complete_prefix_code(p) for p in positive

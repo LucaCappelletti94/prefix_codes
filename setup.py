@@ -60,6 +60,18 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
     tests_require=test_deps,
     # Add here the package dependencies
-    install_requires=[],
+    install_requires=[
+        "unary_coding",
+        "reduced_binary_coding",
+        "minimal_binary_coding",
+        "gamma_coding",
+        "delta_coding",
+        "omega_coding",
+        "interpolative_coding",
+        "nibble_coding",
+        "truncated_binary_encoding",
+        "golomb_coding",
+        "levenshtein_coding"
+    ],
     extras_require=extras,
 )

@@ -2,7 +2,7 @@ prefix_codes
 =========================================================================================
 |travis| |sonar_quality| |sonar_maintainability| |codacy| |code_climate_maintainability| |pip| |downloads|
 
-Python package implementing a number of prefix codes alongside their utilities.
+Python package implementing a number of prefix codes as strings for educational purposes alongside some utilities.
 
 How do I install this package?
 ----------------------------------------------
@@ -18,6 +18,54 @@ Since some software handling coverages sometime get slightly different results, 
 
 |coveralls| |sonar_coverage| |code_climate_coverage|
 
+Available codes
+----------------------------------------------
+The following codes are available as submodules (they are also installable by themselves) or imported.
+
+It should be noted that some of the following codes are not prefix codes, but are still important codes.
+
+- `Unary coding <https://github.com/LucaCappelletti94/unary_coding>`_.
+- `Reduced binary encoding <https://github.com/LucaCappelletti94/reduced_binary_coding>`_.
+- `Minimal binary encoding <https://github.com/LucaCappelletti94/minimal_binary_coding>`_.
+- `Gamma coding <https://github.com/LucaCappelletti94/gamma_coding>`_.
+- `Delta coding <https://github.com/LucaCappelletti94/delta_coding>`_.
+- `Omega coding <https://github.com/LucaCappelletti94/omega_coding>`_.
+- `Interpolative coding <https://github.com/LucaCappelletti94/interpolative_coding>`_.
+- `Nibble e Byte coding <https://github.com/LucaCappelletti94/nibble_coding>`_.
+- `Truncated binary encoding <https://github.com/LucaCappelletti94/truncated_binary_encoding>`_.
+- `Golomb coding <https://github.com/LucaCappelletti94/golomb_coding>`_.
+- `Levenshtein coding <https://github.com/LucaCappelletti94/levenshtein_coding>`_.
+
+Usage examples
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Available utilities
+----------------------------------------------
+Two utilities are available, one to determine if a given code is a prefix code and a second one, based on the `Kraft-McMillan inequality <https://en.wikipedia.org/wiki/Kraft%E2%80%93McMillan_inequality>`_, to determine if a given code is complete.
+
+It should be noted that the second utility fails when the code's words are quite long for float errors.
+
+Usage examples
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: python
+
+    from prefix_codes import is_prefix_code, is_complete_prefix_code
+    from prefix_codes import unary, interpolative_coding
+
+    numbers = list(range(100))
+    unary_code = unary(numbers)
+    interpolative_code = interpolative_coding(numbers, 0, 100)
+    is_prefix_code(unary_code) # True
+    is_prefix_code(interpolative_code) # False
+    is_complete_prefix_code(unary_code) # True
+    is_complete_prefix_code(interpolative_code) # False
+
+
+Elias-Fano semi-succint data structure
+----------------------------------------------
+An educational version of `Elias-Fano semi-succint data structure <https://github.com/LucaCappelletti94/elias_fano>`_ implemented using the codes above is also available.
 
 
 .. |travis| image:: https://travis-ci.org/LucaCappelletti94/prefix_codes.png
