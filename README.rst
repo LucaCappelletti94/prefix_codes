@@ -38,6 +38,21 @@ It should be noted that some of the following codes are not prefix codes, but ar
 
 Usage examples
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The following codes are available and readily importable into your project:
+
+.. code:: python
+
+    from prefix_codes import unary, inverted_unary
+    from prefix_codes import gamma_coding
+    from prefix_codes import delta_coding
+    from prefix_codes import omega_coding, decode_omega_coding
+    from prefix_codes import levenshtein_coding, decode_levenshtein_coding
+    from prefix_codes import truncated_binary_encoding
+    from prefix_codes import reduced_binary_coding
+    from prefix_codes import minimal_binary_coding
+    from prefix_codes import interpolative_coding
+    from prefix_codes import nibble_coding, byte_coding
+    from prefix_codes import golomb_coding, optimal_golomb_coding, bernoulli_golomb_coding
 
 
 Available utilities
