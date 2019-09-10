@@ -3,13 +3,13 @@ from prefix_codes.prefix_codes import mcmillan_sum
 from unary_coding import unary, inverted_unary
 from reduced_binary_coding import reduced_binary_coding
 from minimal_binary_coding import minimal_binary_coding
-from gamma_coding import gamma_coding
-from delta_coding import delta_coding
-from omega_coding import omega_coding
+#from gamma_coding import gamma_coding
+#from delta_coding import delta_coding
+#from omega_coding import omega_coding
 from interpolative_coding import interpolative_coding
 from nibble_coding import nibble_coding, byte_coding
-from golomb_coding import golomb_coding
-from levenshtein_coding import levenshtein_coding
+#from golomb_coding import golomb_coding
+#from levenshtein_coding import levenshtein_coding
 
 
 def test_is_complete_prefix_code():
