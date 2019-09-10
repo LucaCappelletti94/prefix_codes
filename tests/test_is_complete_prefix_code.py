@@ -17,17 +17,17 @@ def test_is_complete_prefix_code():
         [unary(i) for i in range(100)],
         [inverted_unary(i) for i in range(100)],
         [minimal_binary_coding(i, 100) for i in range(100)],
-        #[gamma_coding(i) for i in range(10000)], => FLOAT ERROR
-        #[delta_coding(i) for i in range(10000)],  => FLOAT ERROR
-        #[omega_coding(i) for i in range(1, 10000)],  => FLOAT ERROR
-        #[levenshtein_coding(i) for i in range(10000)],  => FLOAT ERROR
-        #[golomb_coding(i, 3) for i in range(10000)]  => FLOAT ERROR
+        # [gamma_coding(i) for i in range(10000)], => FLOAT ERROR
+        # [delta_coding(i) for i in range(10000)],  => FLOAT ERROR
+        # [omega_coding(i) for i in range(1, 10000)],  => FLOAT ERROR
+        # [levenshtein_coding(i) for i in range(10000)],  => FLOAT ERROR
+        # [golomb_coding(i, 3) for i in range(10000)]  => FLOAT ERROR
     ]
 
     negative = [
         [nibble_coding(i) for i in range(100)],
         [byte_coding(i) for i in range(100)],
-        interpolative_coding(list(range(0,100)), 0, 100),
+        interpolative_coding(list(range(0, 100)), 0, 100),
         [reduced_binary_coding(i) for i in range(100)]
     ]
 

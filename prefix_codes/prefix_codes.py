@@ -12,7 +12,7 @@ def is_prefix_code(words: List[str]) -> bool:
     return True
 
 
-def mcmillan_sum(words: List[str])->float:
+def mcmillan_sum(words: List[str]) -> float:
     """Return sum of diadicts as specified in kraft-mcmillan theorem.
         words:List[str], the list of words from the code.
     """

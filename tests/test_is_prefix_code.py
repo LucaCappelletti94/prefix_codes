@@ -26,7 +26,7 @@ def test_is_prefix_code():
     ]
 
     negative = [
-        interpolative_coding(list(range(0,100)), 0, 100),
+        interpolative_coding(list(range(0, 100)), 0, 100),
         [reduced_binary_coding(i) for i in range(100)]
     ]
 
