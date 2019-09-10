@@ -1,5 +1,4 @@
 from prefix_codes import is_complete_prefix_code
-from prefix_codes.prefix_codes import mcmillan_sum
 from unary_coding import unary, inverted_unary
 from reduced_binary_coding import reduced_binary_coding
 from minimal_binary_coding import minimal_binary_coding
