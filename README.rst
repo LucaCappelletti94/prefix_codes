@@ -18,7 +18,6 @@ Since some software handling coverages sometime get slightly different results, 
 
 |coveralls| |sonar_coverage| |code_climate_coverage|
 
-Python package implementing a number of prefix codes alongside their utilities.
 
 
 .. |travis| image:: https://travis-ci.org/LucaCappelletti94/prefix_codes.png
