@@ -103,12 +103,12 @@ An educational version of `Elias-Fano semi-succint data structure <https://githu
     :target: https://coveralls.io/github/LucaCappelletti94/prefix_codes?branch=master
     :alt: Coveralls Coverage
 
-.. |pip| image:: https://badge.fury.io/py/prefix_codes.svg
-    :target: https://badge.fury.io/py/prefix_codes
+.. |pip| image:: https://badge.fury.io/py/prefix-codes.svg
+    :target: https://badge.fury.io/py/prefix-codes
     :alt: Pypi project
 
-.. |downloads| image:: https://pepy.tech/badge/prefix_codes
-    :target: https://pepy.tech/badge/prefix_codes
+.. |downloads| image:: https://pepy.tech/badge/prefix-codes
+    :target: https://pepy.tech/badge/prefix-codes
     :alt: Pypi total project downloads 
 
 .. |codacy|  image:: https://api.codacy.com/project/badge/Grade/9d55d604f31e4f50b5b79b6c96b66541
